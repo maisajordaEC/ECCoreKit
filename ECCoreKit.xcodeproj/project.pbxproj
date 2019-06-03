@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B8ADCE504FACD159D779467 /* Pods_ECCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81441F671282294FD618CFD /* Pods_ECCoreKit.framework */; };
 		BB1B835322A54BC100B41704 /* ECCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1B834922A54BC100B41704 /* ECCoreKit.framework */; };
 		BB1B835822A54BC100B41704 /* ECCoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B835722A54BC100B41704 /* ECCoreKitTests.swift */; };
 		BB1B835A22A54BC100B41704 /* ECCoreKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1B834C22A54BC100B41704 /* ECCoreKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB1B838822A54C1A00B41704 /* ECUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B838722A54C1A00B41704 /* ECUser.swift */; };
+		BB1B838E22A54C7200B41704 /* ECAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B838D22A54C7200B41704 /* ECAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C7D1982237531DE36632545 /* Pods-ECCoreKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECCoreKit.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ECCoreKit/Pods-ECCoreKit.release.xcconfig"; sourceTree = "<group>"; };
+		8555628C0ED6F4DAA51C343C /* Pods-ECCoreKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECCoreKit.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ECCoreKit/Pods-ECCoreKit.debug.xcconfig"; sourceTree = "<group>"; };
 		BB1B834922A54BC100B41704 /* ECCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1B834C22A54BC100B41704 /* ECCoreKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECCoreKit.h; sourceTree = "<group>"; };
 		BB1B834D22A54BC100B41704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB1B835222A54BC100B41704 /* ECCoreKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECCoreKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1B835722A54BC100B41704 /* ECCoreKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECCoreKitTests.swift; sourceTree = "<group>"; };
 		BB1B835922A54BC100B41704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1B838722A54C1A00B41704 /* ECUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECUser.swift; sourceTree = "<group>"; };
+		BB1B838D22A54C7200B41704 /* ECAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECAccount.swift; sourceTree = "<group>"; };
+		E81441F671282294FD618CFD /* Pods_ECCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8ADCE504FACD159D779467 /* Pods_ECCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +65,8 @@
 				BB1B834B22A54BC100B41704 /* ECCoreKit */,
 				BB1B835622A54BC100B41704 /* ECCoreKitTests */,
 				BB1B834A22A54BC100B41704 /* Products */,
+				F4DE340758C6B8A28C25DC9B /* Pods */,
+				CE6D418BCF0AF4BDCCC82B79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +82,8 @@
 		BB1B834B22A54BC100B41704 /* ECCoreKit */ = {
 			isa = PBXGroup;
 			children = (
+				BB1B838D22A54C7200B41704 /* ECAccount.swift */,
+				BB1B838722A54C1A00B41704 /* ECUser.swift */,
 				BB1B834C22A54BC100B41704 /* ECCoreKit.h */,
 				BB1B834D22A54BC100B41704 /* Info.plist */,
 			);
@@ -84,6 +97,23 @@
 				BB1B835922A54BC100B41704 /* Info.plist */,
 			);
 			path = ECCoreKitTests;
+			sourceTree = "<group>";
+		};
+		CE6D418BCF0AF4BDCCC82B79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E81441F671282294FD618CFD /* Pods_ECCoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4DE340758C6B8A28C25DC9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8555628C0ED6F4DAA51C343C /* Pods-ECCoreKit.debug.xcconfig */,
+				5C7D1982237531DE36632545 /* Pods-ECCoreKit.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +134,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1B835D22A54BC100B41704 /* Build configuration list for PBXNativeTarget "ECCoreKit" */;
 			buildPhases = (
+				78A8A661FAD3B0B5F63C34C0 /* [CP] Check Pods Manifest.lock */,
 				BB1B834422A54BC100B41704 /* Headers */,
 				BB1B834522A54BC100B41704 /* Sources */,
 				BB1B834622A54BC100B41704 /* Frameworks */,
@@ -148,6 +179,7 @@
 				TargetAttributes = {
 					BB1B834822A54BC100B41704 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					BB1B835122A54BC100B41704 = {
 						CreatedOnToolsVersion = 10.2;
@@ -189,11 +221,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78A8A661FAD3B0B5F63C34C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ECCoreKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB1B834522A54BC100B41704 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1B838822A54C1A00B41704 /* ECUser.swift in Sources */,
+				BB1B838E22A54C7200B41704 /* ECAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +399,9 @@
 		};
 		BB1B835E22A54BC100B41704 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8555628C0ED6F4DAA51C343C /* Pods-ECCoreKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.englishcentral.mobile.ios.ECCoreKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,7 +427,9 @@
 		};
 		BB1B835F22A54BC100B41704 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C7D1982237531DE36632545 /* Pods-ECCoreKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +455,7 @@
 		BB1B836122A54BC100B41704 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H62ZQ6QKE;
 				INFOPLIST_FILE = ECCoreKitTests/Info.plist;
@@ -409,6 +474,7 @@
 		BB1B836222A54BC100B41704 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H62ZQ6QKE;
 				INFOPLIST_FILE = ECCoreKitTests/Info.plist;
