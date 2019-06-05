@@ -7,6 +7,20 @@
 //
 
 import UIKit
+import MBProgressHUD
+import SwiftyJSON
+
+// Import static framework from Pods
+import NewRelicAgent
+
+// Import manually added frameworks
+import AudioStreamer
+import OAuthCore
+import Jwt
+import ECReachability
+import RNCryptor
+import TTTAttributedLabel
+import WebViewJavascriptBridge
 
 public class ECUser: NSObject {
     public var username: String
@@ -19,7 +33,7 @@ public class ECUser: NSObject {
         self.age = age
         
         // NewRelic
-        // NewRelic.recordMetric(withName: "MetricName", category: "MetricCategory")
+        NewRelic.recordMetric(withName: "MetricName", category: "MetricCategory")
     }
     
     public func logUser() {
